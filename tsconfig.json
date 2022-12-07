@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "declaration": true,
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
