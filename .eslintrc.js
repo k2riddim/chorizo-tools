@@ -5,15 +5,15 @@ module.exports = {
   },
   extends: [
     "plugin:react/recommended",
-    "standard-with-typescript",
+    "plugin:@typescript-eslint/eslint-recommended",
     "prettier",
     "next",
   ],
-  overrides: [{ files: ["*.ts", "*.tsx"] }],
+  overrides: [{ files: ["*.ts", "*.tsx", "*.js"] }],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     tsconfigRootDir: __dirname,
-    project: ["./tsconfig.json"],
+    project: [null],
     ecmaFeatures: {
       jsx: true,
     },
